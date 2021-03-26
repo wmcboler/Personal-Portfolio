@@ -73,8 +73,10 @@ header a:active {
     max-width: 65%;
    text-align:center;
    padding: 3rem;
+   padding-bottom: 4rem;
    font-weight: 300;
    border-radius: 5px;
+   border: .5rem solid white;
 
 }
 
@@ -109,7 +111,7 @@ header a:active {
 
 /* media query */
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 425px) {
     #welcome-section-info {
         padding-bottom: 6rem;
     }
