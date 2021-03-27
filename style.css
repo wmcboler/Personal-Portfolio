@@ -5,11 +5,14 @@
 }
 body {
     font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .section-title {
     text-align: center;
-    font-size: 2rem;
+    font-size: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid black;
 }
 
 /* Header section */
@@ -62,7 +65,7 @@ header a:active {
     top: 5rem;
 }
 #welcome-section h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     padding-bottom: 1rem;
 }
 #welcome-section-info {
@@ -81,6 +84,43 @@ header a:active {
 }
 
 /* Project Section */
+#projects {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+.project-tile {
+    margin: .5rem auto;
+    background-color: gray;
+    border: 1rem solid black;
+    display:flex;
+    flex-direction: column;
+    border-radius: 5px;
+    
+}
+.project-tile-link {
+    text-align: center;
+    font-size: 2rem;
+    padding: .5rem;
+    border-top: 2px solid black;
+}
+.project-tile-link a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.project-tile-link a:hover{
+    color: black;
+}
+.project-tile-img {
+   min-width: 30rem;
+    max-width: 50rem;
+    height:auto;
+}
+
 
 
 
@@ -111,8 +151,37 @@ header a:active {
 
 /* media query */
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 500px) {
     #welcome-section-info {
         padding-bottom: 6rem;
     }
+    .section-title {
+        font-size: 2rem;
+    }
+    .project-tile {
+        border: .5rem solid black;
+    }
+    .project-tile-img {
+    min-width: 9rem;
+    max-width: 20rem;
+    height:auto;
+    }
+    .project-tile-link {
+        font-size: 1rem;
+    }
+
+}
+@media only screen and (min-width: 501px) and (max-width: 850px) {
+    .project-tile {
+        border: .5rem solid black;
+    }
+    .project-tile-img {
+    min-width: 25rem;
+    max-width: 30rem;
+    height:auto;
+    }
+    .project-tile-link {
+        font-size: 1rem;
+    }
+
 }
