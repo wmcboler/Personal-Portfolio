@@ -127,7 +127,8 @@ header a:active {
 /* Contact section */
 #contact {
     width: 100%;
-    height: 10rem;
+    height: auto;
+    background-color: hsla(0,0%,30%,.1);
 }
 #social_icons {
     display: flex;
